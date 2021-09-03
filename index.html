@@ -22,7 +22,7 @@
                 <button onclick="clearDisplay()" class="operator" value="CE">CE</button>
                 <button onclick="clearAll()" class="operator" value="AC">AC</button>
                 <button onclick="backspace()" class="operator">
-                    <i class="fas fa-window-close backspac"></i>
+                    <i class="fas fa-window-close backspace"></i>
                 </button>
                 <button onclick="operator('/')" class="operator">&div;</button>
 
@@ -41,7 +41,7 @@
                 <button onclick="showNumber(3)" class="number">3</button>
                 <button onclick="operator('+')" class="operator">+</button>
 
-                <button class="empty" disabled>+-</button>
+                <button disabled onclick="operator('%')" class="operator">%</button>
                 <button onclick="showNumber(0)" class="number">0</button>
                 <button onclick="functionForDode('.')" class="number">.</button>
                 <button onclick="doMath()" class="operator">=</button>
