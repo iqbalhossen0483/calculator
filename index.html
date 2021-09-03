@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/49747da1d2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="container">
+        <div id="calculator-wrapper">
+            <input type="text" disabled id="history">
+            <input type="text" disabled id="display" value="0">
+
+            <div id="calculator">
+                <button onclick="clearDisplay()" class="operator" value="CE">CE</button>
+                <button onclick="clearAll()" class="operator" value="AC">AC</button>
+                <button onclick="backspace()" class="operator">
+                    <i class="fas fa-window-close backspac"></i>
+                </button>
+                <button onclick="operator('/')" class="operator">&div;</button>
+
+                <button onclick="showNumber(9)" onkeyup="showNumberFromKeyboard()" class="number">9</button>
+                <button onclick="showNumber(7)" class="number">7</button>
+                <button onclick="showNumber(8)" class="number">8</button>
+                <button onclick="operator('*')" class="operator">&times;</button>
+
+                <button onclick="showNumber(4)" class="number">4</button>
+                <button onclick="showNumber(5)" class="number">5</button>
+                <button onclick="showNumber(6)" class="number">6</button>
+                <button onclick="operator('-')" class="operator">-</button>
+
+                <button onclick="showNumber(1)" class="number">1</button>
+                <button onclick="showNumber(2)" class="number">2</button>
+                <button onclick="showNumber(3)" class="number">3</button>
+                <button onclick="operator('+')" class="operator">+</button>
+
+                <button class="empty" disabled>+-</button>
+                <button onclick="showNumber(0)" class="number">0</button>
+                <button onclick="functionForDode('.')" class="number">.</button>
+                <button onclick="doMath()" class="operator">=</button>
+            </div>
+        </div>
+    </section>
+    <!-- my function  -->
+    <script src="function.js"></script>
+</body>
+
+</html>
